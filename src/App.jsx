@@ -1,7 +1,7 @@
 import React from "react";
 import "../src/index.css";
 import Header from "./components/Header";
-import StarWarsShips from "./context/ShipContext";
+import StarWarsShips from "./components/StarWarsShips";
 import { Footer } from "./components/Footer";
 
 function App() {

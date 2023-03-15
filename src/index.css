@@ -2,7 +2,6 @@ body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
 }
-
 .Header {
   background-color: black;
   display: flex;
@@ -10,23 +9,19 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
-
 .Header-logoContainer {
   flex: 1;
 }
-
 .Header-logo {
   display: block;
   width: 45%;
   height: auto;
   margin: 0 auto;
 }
-
 .Header-links {
   display: flex;
   align-items: center;
 }
-
 .Header-links a {
   color: white;
   margin-left: 10px;
@@ -41,7 +36,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .shipContainer {
   background-color: #333;
   color: white;
@@ -49,17 +43,16 @@ body {
   padding: 20px;
   width: 80%;
 }
-
 .shipName {
   font-weight: bold;
   font-size: 1.4rem;
 }
-
-
 .footer {
   text-align: center;
   background-color: black;
-  padding: 20px;
+  padding: 1px;
   color: white;
 }
-
+.shipDetails {
+  color: white;
+}
