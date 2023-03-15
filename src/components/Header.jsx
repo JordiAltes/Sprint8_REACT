@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo_StarWars from "../assets/logo_starWars.png";
-import darthVader from "../assets/darthVader.png";
+/* import { Link } from "react-router-dom";
+ *//* import logo_StarWars from "../assets/logo_starWars.png";
+ */import darthVader from "../assets/darthVader.png";
+import StarWarsLogo from "../assets/StarWarsLogo.png"
 const Header = () => {
   return (
     <header className="Header">
@@ -9,7 +10,7 @@ const Header = () => {
         <img src={darthVader} alt="darthVader" className="darthVader" />
       </div>
       <div className="Header-logoContainer">
-        <img src={logo_StarWars} alt="logo star wars" className="Header-logo" />
+        <img src={StarWarsLogo} alt="logo star wars" className="Header-logo" />
       </div>
       <div className="Header-links">
         <a href="">Log In</a>

@@ -17,7 +17,7 @@ body {
 
 .Header-logo {
   display: block;
-  max-width: 200%;
+  width: 45%;
   height: auto;
   margin: 0 auto;
 }
@@ -33,7 +33,7 @@ body {
 }
 .darthVader {
   display: block;
-  max-width: 200px;
+  max-width: 150px;
 }
 .container {
   background-color: black;
@@ -50,11 +50,16 @@ body {
   width: 80%;
 }
 
-.ship-name {
+.shipName {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-.ship-model {
-  margin-top: 10px;
+
+.footer {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  color: white;
 }
+
