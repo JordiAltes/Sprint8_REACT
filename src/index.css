@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Header {
@@ -16,7 +17,7 @@ body {
 
 .Header-logo {
   display: block;
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
   margin: 0 auto;
 }
@@ -29,8 +30,31 @@ body {
 .Header-links a {
   color: white;
   margin-left: 10px;
-  font-family: "Open Sans", sans-serif;
 }
 .darthVader {
-  width: 200px;
+  display: block;
+  max-width: 200px;
+}
+.container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shipContainer {
+  background-color: #333;
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 80%;
+}
+
+.ship-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ship-model {
+  margin-top: 10px;
 }
