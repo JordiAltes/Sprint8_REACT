@@ -5,13 +5,23 @@ import ShipDetails from "./ShipDetails";
 const StarWarsShips = () => {
   const [ships, setShips] = useState([]);
   const [selectedShip, setSelectedShip] = useState(null);
-
-  useEffect(() => {
-    fetch("https://swapi.dev/api/starships/")
-      .then((response) => response.json())
-      .then((data) => setShips(data.results));
-  }, []);
+  const [page, setPage] = useState(1)
   
+  useEffect(() => {
+    fetch(`https://swapi.dev/api/starships/?page=${page}`)
+    .then((response) => response.json())
+    .then((data) => setShips(data.results));
+  }, [page]);
+  
+   function showMore () {
+    if (page < 4) {
+      setPage(page + 1)
+    }
+    if (page === 4) {
+      alert("Ja estas a la ultima pagina, et redirigim a la pagina 1")
+      setPage(1)
+    }
+  } 
 
   return (
     <div className="container">
@@ -23,6 +33,7 @@ const StarWarsShips = () => {
         />
       ) : (
         ships.map((ship) => (
+          
           <div
             key={ship.name}
             className="shipContainer"
@@ -33,6 +44,11 @@ const StarWarsShips = () => {
           </div>
         ))
       )}
+      {selectedShip === null ? (
+        <div>
+          <button  onClick={showMore}  className="buttonShowMore">Show More</button>
+        </div>
+      ) : null}
     </div>
   );
 };

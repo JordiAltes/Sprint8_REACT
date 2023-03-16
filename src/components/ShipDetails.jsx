@@ -10,18 +10,41 @@ const ShipDetails = ({ ship, onBackClick }) => {
   return (
     <div className="shipDetails">
       <img src={image} onError={replaceImage} />
-      <h2>{ship.name}</h2>
-      <p>Model: {ship.model}</p>
-      <p>Manufacturer: {ship.manufacturer}</p>
-      <p>Cargo capacity: {ship.cargo_capacity}</p>
-      <p>Cost: {ship.cost_in_credits}</p>
-      <p>Max atmosphering speed: {ship.max_atmosphering_speed}</p>
-      <p>Length: {ship.length}</p>
-      <p>Consumables: {ship.consumables}</p>
-      <p>Starship class: {ship.starship_class}</p>
-      <p>Crew: {ship.crew}</p>
-      <p>Passenger capacity: {ship.passengers}</p>
-      <p>Maximum speed in real space: {ship.MGLT}</p>
+      <h1>{ship.name}</h1>
+      <p>
+        Model: <span>{ship.model}</span>
+      </p>
+      <p>
+        Manufacturer: <span>{ship.manufacturer}</span>
+      </p>
+      <p>
+        Cargo capacity: <span>{ship.cargo_capacity}</span>
+      </p>
+      <p>
+        Cost: <span>{ship.cost_in_credits}</span>
+      </p>
+      <p>
+        Max atmosphering speed: <span>{ship.max_atmosphering_speed}</span>
+      </p>
+      <p>
+        Maximum speed in real space: <span>{ship.MGLT}</span>
+      </p>
+      <p>
+        Length: <span>{ship.length}</span>
+      </p>
+      <p>
+        Consumables: <span>{ship.consumables}</span>
+      </p>
+      <p>
+        Starship class: <span>{ship.starship_class}</span>
+      </p>
+      <p>
+        Crew: <span>{ship.crew}</span>
+      </p>
+      <p>
+        Passenger capacity: <span>{ship.passengers}</span>
+      </p>
+      
       <button onClick={onBackClick}>Back to Ships</button>
     </div>
   );
