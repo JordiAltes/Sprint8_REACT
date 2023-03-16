@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import ShipDetails from "./ShipDetails";
+import Swal from "sweetalert2";
+import "animate.css"
 
 const StarWarsShips = () => {
   const [ships, setShips] = useState([]);
