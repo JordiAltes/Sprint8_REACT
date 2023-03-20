@@ -1,17 +1,8 @@
 import React from "react";
 import "../src/index.css";
-import Header from "./components/Header";
-import StarWarsShips from "./components/StarWarsShips";
-import { Footer } from "./components/Footer";
+import "animate.css"
+import Routes from "./routes/routes";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <StarWarsShips />
-      <Footer />
-    </div>
-  );
-}
+export const App = () => <Routes />;
 
 export default App;

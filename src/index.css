@@ -5,9 +5,12 @@ body {
 .Header {
   background-color: black;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 20px;
+}
+.headerUp {
+  display: flex;
 }
 .Header-logoContainer {
   flex: 1;
@@ -25,10 +28,31 @@ body {
 .Header-links a {
   color: white;
   margin-left: 10px;
+  text-decoration: none;
+}
+.navLink {
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(211, 211, 211);
+  font-weight: 600;
+  padding: 20px;
+}
+.navLink:hover {
+  color: yellow;
+  border-bottom: 2px solid blue;
+}
+.headerDown {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 .darthVader {
   display: block;
   max-width: 150px;
+  margin-top: 100px;
 }
 .container {
   background-color: black;
@@ -73,3 +97,17 @@ body {
 .buttonShowMore {
   color: black;
 }
+.h1Welcome {
+  text-align: center;
+  background-color: black;
+  color: yellow;
+  margin: 0px;
+  height: 100px;
+}
+.textWelcome{
+  background-color: black;
+  margin: 0px;
+  color: yellow;
+  text-align: center;
+}
+
