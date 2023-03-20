@@ -17,9 +17,9 @@ const Header = () => {
           />
         </div>
         <div className="Header-links">
-          <a href="">Log In</a>
+          <Link to="/LogIn">Log In</Link>
           <span>//</span>
-          <a href="">Sign Up</a>
+          <Link to="/SignUp">Sign Up</Link>
         </div>
       </div>
       <div className="headerDown">

@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
+  background-color: black;
 }
 .Header {
   background-color: black;
@@ -16,8 +17,8 @@ body {
   flex: 1;
 }
 .Header-logo {
-  display: block;
-  width: 45%;
+  display: flex;
+  width: 50%;
   height: auto;
   margin: 0 auto;
 }
@@ -96,7 +97,25 @@ body {
 }
 .buttonShowMore {
   color: black;
+  background-color: yellow;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 3px 0px #888;
+  font-size: 1.2em;
+  height: 100px;
+  width: 100px;
 }
+.buttonShowMore:hover {
+  box-shadow: 0px 1px 0px #888;
+  transform: translateY(2px);
+  background-color: white;
+}
+.buttonShowMore:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
 .h1Welcome {
   text-align: center;
   background-color: black;
@@ -104,10 +123,45 @@ body {
   margin: 0px;
   height: 100px;
 }
-.textWelcome{
+.textWelcome {
   background-color: black;
   margin: 0px;
   color: yellow;
   text-align: center;
 }
+/* .webForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: yellow;
+} */
+.link {
+  text-decoration: none;
+  color: blue;
+}
+.divSubmit {
+  text-align: center;
+  margin-top: 20px;
+}
+.webForm {
+  width: 80%;
+  margin: 0 auto;
+  color: yellow;
+  text-align: center;
+}
 
+.webForm h2 {
+  text-align: center;
+}
+
+.inputForm input {
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px solid yellow;
+  font-size: larger;
+  text-align: center;
+}
