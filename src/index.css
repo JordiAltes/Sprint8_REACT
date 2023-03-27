@@ -7,14 +7,19 @@ body {
   background-color: black;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 .headerUp {
   display: flex;
 }
+.logoDarthVader {
+  width: 25%;
+ 
+}
 .Header-logoContainer {
-  flex: 1;
+  width: 50%;
+  text-align: center;
 }
 .Header-logo {
   display: flex;
@@ -23,13 +28,23 @@ body {
   margin: 0 auto;
 }
 .Header-links {
+  width: 25%;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.buttonLogOut{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 .Header-links a {
   color: white;
   margin-left: 10px;
   text-decoration: none;
+  font-size: x-large;
+  margin-right: 20px;
 }
 .navLink {
   flex-direction: row;
@@ -51,9 +66,11 @@ body {
   padding: 10px;
 }
 .darthVader {
-  display: block;
-  max-width: 150px;
-  margin-top: 100px;
+  width: 50%;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  
 }
 .container {
   background-color: black;
@@ -122,6 +139,7 @@ body {
   color: yellow;
   margin: 0px;
   height: 100px;
+  margin-top: 30px;
 }
 .textWelcome {
   background-color: black;
@@ -129,13 +147,7 @@ body {
   color: yellow;
   text-align: center;
 }
-/* .webForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: black;
-  color: yellow;
-} */
+
 .link {
   text-decoration: none;
   color: blue;
