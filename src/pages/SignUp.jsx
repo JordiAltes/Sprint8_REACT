@@ -39,8 +39,6 @@ export function SignUp() {
       });
       return;
     }
-    const userData = { firstName, lastName, email, password };
-    localStorage.setItem("userData", JSON.stringify(userData));
     Swal.fire({
       imageUrl: maestroYoda,
       imageHeight: 200,
@@ -56,6 +54,8 @@ export function SignUp() {
       },
     }).then((result) => {
       if (result.isConfirmed) {
+        const userData = { firstName, lastName, email, password };
+        localStorage.setItem("userData", JSON.stringify(userData));
         navigate('/LogIn');
       }
     });

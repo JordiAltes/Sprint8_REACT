@@ -2,6 +2,8 @@ body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
   background-color: black;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .Header {
   background-color: black;
@@ -15,7 +17,6 @@ body {
 }
 .logoDarthVader {
   width: 25%;
- 
 }
 .Header-logoContainer {
   width: 50%;
@@ -33,11 +34,32 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-.buttonLogOut{
+.buttonLogOut {
   width: 25%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 20px;
+}
+.textLogOut {
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.userIcon {
+  color: yellow;
+  font-size: 1.8em;
+
+}
+.textLogOut1{
+  cursor: text;
+  color: yellow;
+  font-size: 1.2em;
+}
+.textLogOut:hover {
+  color: yellow;
+  text-decoration: underline;
+  font-weight: bold;
 }
 .Header-links a {
   color: white;
@@ -56,7 +78,7 @@ body {
 }
 .navLink:hover {
   color: yellow;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid yellow;
 }
 .headerDown {
   border-top: 1px solid white;
@@ -70,7 +92,6 @@ body {
   margin-top: 40px;
   margin-left: 20px;
   margin-bottom: 30px;
-  
 }
 .container {
   background-color: black;
@@ -87,6 +108,14 @@ body {
   margin-bottom: 10px;
   padding: 20px;
   width: 80%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+
+}
+.shipContainer:hover{
+  color: yellow;
+  background-color: #6B728E;
 }
 .shipName {
   font-weight: bold;
@@ -122,6 +151,8 @@ body {
   font-size: 1.2em;
   height: 100px;
   width: 100px;
+  transition: background-color 0.3s ease;
+
 }
 .buttonShowMore:hover {
   box-shadow: 0px 1px 0px #888;

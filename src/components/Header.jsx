@@ -4,9 +4,12 @@ import StarWarsLogo from "../assets/StarWarsLogo.png";
 import { Link } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
 import { useContext } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
+  const userData = JSON.parse(localStorage.getItem("userData"))
   function logOut() {
     setIsLoggedIn(false);
   }
@@ -24,7 +27,11 @@ const Header = () => {
           />
         </div>
         {isLoggedIn ? (<div className="buttonLogOut">
-          <button onClick={logOut}>Log Out</button>
+          <div className="userIcon">
+            <FontAwesomeIcon icon={faUserAstronaut} />
+          </div>
+          <div className="textLogOut1">{`${userData.firstName} ${userData.lastName}`}</div>
+          <div className="textLogOut" onClick={logOut}>Log Out</div>
         </div>): 
         <div className="Header-links">
           <Link to="/LogIn">Log In</Link>
