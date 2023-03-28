@@ -2,7 +2,7 @@ body {
   margin: 0px;
   font-family: "Open Sans", sans-serif;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
 }
 .Header {
@@ -129,7 +129,14 @@ body {
   padding: 1px;
   color: white;
 }
-
+.shipDetails {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+/* .shipDetails img{
+  width: 90%;
+} */
 .shipDetails p {
   color: yellow;
   font-weight: bold;
@@ -208,4 +215,26 @@ body {
   border: 3px solid yellow;
   font-size: larger;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .shipDetails img {
+    width: 90%;
+  }
+  .logoDarthVader {
+    display: none;
+  }
+  .textLogOut1 {
+    display: none;
+  }
+  .userIcon {
+    display: none;
+  }
+  .textLogOut {
+    font-size: small;
+  }
+  .Header-links a{
+    font-size: small;
+    align-items: end;
+  }
+  
 }
