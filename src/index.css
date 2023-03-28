@@ -34,6 +34,10 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.Header-links a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
 .buttonLogOut {
   width: 25%;
   display: flex;
@@ -49,9 +53,8 @@ body {
 .userIcon {
   color: yellow;
   font-size: 1.8em;
-
 }
-.textLogOut1{
+.textLogOut1 {
   cursor: text;
   color: yellow;
   font-size: 1.2em;
@@ -111,11 +114,10 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 10px;
-
 }
-.shipContainer:hover{
+.shipContainer:hover {
   color: yellow;
-  background-color: #6B728E;
+  background-color: #6b728e;
 }
 .shipName {
   font-weight: bold;
@@ -152,7 +154,6 @@ body {
   height: 100px;
   width: 100px;
   transition: background-color 0.3s ease;
-
 }
 .buttonShowMore:hover {
   box-shadow: 0px 1px 0px #888;

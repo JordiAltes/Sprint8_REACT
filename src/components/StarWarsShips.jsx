@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ShipDetails from "./ShipDetails";
 import Swal from "sweetalert2";
 import "animate.css";
-import maestroYoda from "../assets/maestroYoda.png"
+import maestroYoda from "../assets/maestroYoda.png";
 
 const StarWarsShips = () => {
   const [ships, setShips] = useState([]);
@@ -23,8 +23,8 @@ const StarWarsShips = () => {
     if (page === 4) {
       Swal.fire({
         imageUrl: maestroYoda,
-        imageHeight:200,
-        imageWidth:200,
+        imageHeight: 200,
+        imageWidth: 200,
         background: "black",
         color: "yellow",
         title: "On the last page you are, to the first page are we redirecting",
@@ -34,13 +34,11 @@ const StarWarsShips = () => {
         hideClass: {
           popup: "animate__animated animate__fadeOutUp",
         },
-        
       }).then((result) => {
         if (result.isConfirmed) {
-          setPage(1)
+          setPage(1);
         }
       });
-      
     }
   }
 
