@@ -46,10 +46,10 @@ const Header = () => {
       </div>
       <div className="headerDown">
         <Link to="/" className="navLink">
-          {"  "}HOME{"  "}
+          HOME
         </Link>
         <Link to="/List" className="navLink">
-          {"  "}STARSHIPS{"  "}
+          STARSHIPS
         </Link>
       </div>
     </header>
